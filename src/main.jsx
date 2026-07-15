@@ -11,8 +11,8 @@ createRoot(document.getElementById("root")).render(
     <BrowserRouter>
       <Navbar />
       <Routes>
-        <Route index to="/" element={<App />} />
-        <Route to="/projects" element={<Projects />} />
+        <Route index path="/" element={<App />} />
+        <Route path="/projects" element={<Projects />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
