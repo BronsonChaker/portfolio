@@ -7,7 +7,7 @@ export default function Navbar() {
         <NavLink to="/">home</NavLink>
         <NavLink to="/projects">projects</NavLink>
         <NavLink to="/resume">resume</NavLink>
-        <NavLink to="/email">blog</NavLink>
+        <NavLink to="/blog">blog</NavLink>
         <NavLink to="/email">email</NavLink>
       </div>
     </nav>
