@@ -1,72 +1,135 @@
+import northendHome from "../assets/images/northend_home.png";
+
 export default function Projects() {
   return (
     <div className="h-screen w-full flex justify-center">
       <title>Projects</title>
       <div className="w-5/12">
-        <ol class="relative border-s border-default">
-          <li class="mb-10 ms-4">
-            <div class="absolute w-3 h-3 bg-neutral-quaternary rounded-full mt-1.5 -start-1.5 border border-buffer"></div>
-            <time class="text-sm font-normal leading-none text-body">
-              February 2022
-            </time>
-            <h3 class="text-lg font-semibold text-heading my-2">
-              Application UI code in Tailwind CSS
+        <ol className="relative border-s border-default">
+          {/* Blueprint */}
+          <li className="mb-10 ms-4">
+            <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5 border border-buffer"></div>
+            <h3 className="text-lg font-semibold text-heading my-2">
+              Blueprint - Project Management Suite
             </h3>
-            <p class="mb-4 text-base font-normal text-body">
-              Get access to over 20+ pages including a dashboard layout, charts,
-              kanban board, calendar, and pre-order E-commerce & Marketing
-              pages.
-            </p>
-            <a
-              href="#"
-              class="inline-flex items-center text-body bg-neutral-secondary-medium box-border border border-default-medium hover:bg-neutral-tertiary-medium hover:text-heading focus:ring-4 focus:ring-neutral-tertiary shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none"
-            >
-              Learn more
-              <svg
-                class="w-4 h-4 ms-1.5 -me-0.5"
-                aria-hidden="true"
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                fill="none"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 12H5m14 0-4 4m4-4-4-4"
-                />
-              </svg>
-            </a>
+
+            {/* Blueprint - Project Images */}
+
+            {/* Blueprint - Project Stack */}
+
+            {/* Blueprint - Website & Github Link */}
+
+            {/* Blueprint - Project Description */}
+            <ul className="list-inside list-disc">
+              <li>
+                Developing a full-stack project management suite for residential
+                and commercial construction companies, allowing management of
+                workflow and tasks for projects from pre-site to handover
+              </li>
+              <li>
+                Developing a Django REST API backend that handles
+                authentication, business logic, data validation, and
+                functionality of the application and serves data to React
+                frontend
+              </li>
+              <li>
+                Developing a responsive and mobile-friendly UI and UX using
+                React and Tailwind CSS that fetches required user data from
+                Django REST API endpoints
+              </li>
+              <li>
+                Django REST API endpoints functionality and usage tested
+                throughout development using Postman
+              </li>
+            </ul>
           </li>
-          <li class="mb-10 ms-4">
-            <div class="absolute w-3 h-3 bg-neutral-quaternary rounded-full mt-1.5 -start-1.5 border border-buffer"></div>
-            <time class="text-sm font-normal leading-none text-body">
-              March 2022
-            </time>
-            <h3 class="text-lg font-semibold text-heading my-2">
-              Marketing UI design in Figma
+
+          {/* Melior */}
+          <li className="mb-10 ms-4">
+            <div className="absolute w-3 h-3 bg-blue-500 rounded-full mt-1.5 -start-1.5 border border-buffer"></div>
+
+            <h3 className="text-lg font-semibold text-heading my-2">
+              Melior - Free Invoice Generator
             </h3>
-            <p class="text-base font-normal text-body">
-              All of the pages and components are first designed in Figma and we
-              keep a parity between the two versions even as we update the
-              project.
-            </p>
+
+            {/* Melior - Project Images */}
+
+            {/* Melior - Project Stack */}
+
+            {/* Melior - Website & Github Link */}
+
+            <ul className="list-inside list-disc">
+              <li>
+                Created a free online invoice generator which can be used by
+                individuals and businesses to instantly download professionally
+                templated invoices, no registration or subscription required
+              </li>
+              <li>
+                Functionality and logic of application created solely in vanilla
+                JavaScript which includes form handling, monetary calculations,
+                and PDF generation with html2pdf.js library, allowing invoices
+                to be generated through the client locally without requirement
+                of a backend
+              </li>
+              <li>
+                Designed in Figma and Developed with HTML, CSS, and JavaScript
+              </li>
+            </ul>
           </li>
-          <li class="ms-4">
-            <div class="absolute w-3 h-3 bg-neutral-quaternary rounded-full mt-1.5 -start-1.5 border border-buffer"></div>
-            <time class="mb-1 text-sm font-normal leading-none text-body">
-              April 2022
-            </time>
-            <h3 class="text-lg font-semibold text-heading my-2">
-              E-Commerce UI code in Tailwind CSS
+
+          {/* Yates Roofing Website */}
+          <li className="ms-4">
+            <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5 border border-buffer"></div>
+            <h3 className="text-lg font-semibold text-heading my-2">
+              Yates Roofing Website
             </h3>
-            <p class="text-base font-normal text-body">
-              Get started with dozens of web components and interactive elements
-              built on top of Tailwind CSS.
-            </p>
+
+            {/* Yates Roofing Website - Project Images */}
+
+            {/* Yates Roofing Website - Project Stack */}
+
+            {/* Yates Roofing Website - Website & Github Link */}
+
+            <ul className="list-inside list-disc">
+              <li>
+                Designed and developed responsive and mobile-friendly website
+                for local roofing company, features a photo gallery, contact
+                page, and roofing options for potential customers
+              </li>
+              <li>
+                Delivered full workflow from design to deployment which includes
+                consultation, Figma design mockups, HTML and CSS build, and
+                Netlify deployment
+              </li>
+            </ul>
+          </li>
+
+          {/* Northend Boxing Website */}
+          <li className="ms-4">
+            <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5 border border-buffer"></div>
+
+            <h3 className="text-lg font-semibold text-heading my-2">
+              Northend Boxing Website
+            </h3>
+
+            {/* Northend Boxing Website - Project Images */}
+
+            {/* Northend Boxing Website - Project Stack */}
+
+            {/* Northend Boxing Website - Website & Github Link */}
+
+            <ul className="list-inside list-disc">
+              <li>
+                Designed and developed a responsive website for local boxing gym
+                business, mainly used by customers to view class timetables and
+                sign up for memberships
+              </li>
+              <li>
+                Gathered client requirements and used them to create the design
+                and layout for the website using Figma prior to development and
+                developed using HTML, and CSS.
+              </li>
+            </ul>
           </li>
         </ol>
       </div>
