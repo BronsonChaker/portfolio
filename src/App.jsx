@@ -4,6 +4,17 @@ import metricon_logo from "../src/assets/images/metricon_logo.webp";
 import mjh_logo from "../src/assets/images/mjh_logo.png";
 import sekisui_logo from "../src/assets/images/sekisui_logo.png";
 import contractor_logo from "../src/assets/images/contractor_logo.png";
+import react_logo from "../src/assets/svg/react.svg";
+import django_logo from "../src/assets/svg/django_logo.svg";
+import js_logo from "../src/assets/svg/js_logo.svg";
+import python_logo from "../src/assets/svg/python_logo.svg";
+import java_logo from "../src/assets/svg/java_logo.svg";
+import tailwind_logo from "../src/assets/svg/tailwind_logo.svg";
+import pgsql_logo from "../src/assets/svg/pgsql_logo.svg";
+import nodejs_logo from "../src/assets/svg/nodejs_logo.svg";
+import postman_logo from "../src/assets/svg/postman_logo.svg";
+import ExpListItem from "./components/ExpListItem";
+import SkillsListItem from "./components/SkillsListItem";
 
 export default function App() {
   return (
@@ -43,28 +54,13 @@ export default function App() {
 
         <div className="mt-10">
           <h1 className="text-xl font-bold">Education</h1>
-          <div className="flex flex-row mt-5 w-full">
-            {/* Logo */}
-            <div className="flex rounded-full justify-start items-center w-[10%]">
-              <img
-                src={csu_logo}
-                alt=""
-                className="rounded-full h-14 border-4 p-1.5 border-[#E5E5E5]"
-              />
-            </div>
-
-            {/* Name & Degree */}
-            <div className="flex flex-col items-start justify-center w-[60%]">
-              <p className="font-bold">Charles Sturt University</p>
-              <p>Bachelor of Computer Science</p>
-              <p className="tracking-wide">GPA: 6.09 / 7.0 [Distinction]</p>
-            </div>
-
-            {/* Timeline */}
-            <div className="flex justify-end w-[30%]">
-              <p className="text-sm text-gray-400">June 2023 - June 2026</p>
-            </div>
-          </div>
+          <ExpListItem
+            image={csu_logo}
+            name={"Charles Sturt University"}
+            role={"Bachelor of Computer Science"}
+            grade={"GPA: 6.09 / 7.0 [Distinction]"}
+            date={"June 2023 - June 2026"}
+          />
         </div>
 
         {/* Work Experience */}
@@ -74,128 +70,65 @@ export default function App() {
 
           {/* Experience 1 */}
 
-          <div className="flex flex-row mt-5 w-full">
-            {/* Logo */}
-            <div className="flex rounded-full justify-start items-center w-[10%]">
-              <img
-                src={contractor_logo}
-                alt=""
-                className="rounded-full h-14 border-4 p-1.5 border-[#E5E5E5]"
-              />
-            </div>
-
-            {/* Name & Degree */}
-            <div className="flex flex-col items-start justify-center w-[60%]">
-              <p className="font-bold">Self Employed</p>
-              <p>Construction Contractor</p>
-            </div>
-
-            {/* Timeline */}
-            <div className="flex justify-end w-[30%]">
-              <p className="text-sm text-gray-400">May 2025 - Present</p>
-            </div>
-          </div>
+          <ExpListItem
+            image={contractor_logo}
+            name={"Self Employed"}
+            role={"Construction Contractor"}
+            date={"May 2025 - Present"}
+          />
 
           {/* Experience 2 */}
 
-          <div className="flex flex-row mt-5 w-full">
-            {/* Logo */}
-            <div className="flex rounded-full justify-start items-center w-[10%]">
-              <img
-                src={sekisui_logo}
-                alt=""
-                className="rounded-full h-14 border-4 p-1.5 border-[#E5E5E5]"
-              />
-            </div>
-
-            {/* Name & Degree */}
-            <div className="flex flex-col items-start justify-center w-[60%]">
-              <p className="font-bold">Sekisui House Australia</p>
-              <p>Application Support Analyst</p>
-            </div>
-
-            {/* Timeline */}
-            <div className="flex justify-end w-[30%]">
-              <p className="text-sm text-gray-400">Nov 2024 - Apr 2025</p>
-            </div>
-          </div>
+          <ExpListItem
+            image={sekisui_logo}
+            name={"Sekisui House Australia"}
+            role={"Application Support Analyst"}
+            date={"Nov 2024 - Apr 2025"}
+          />
 
           {/* Experience 3 */}
 
-          <div className="flex flex-row mt-5 w-full">
-            {/* Logo */}
-            <div className="flex rounded-full justify-start items-center w-[10%]">
-              <img
-                src={sekisui_logo}
-                alt=""
-                className="rounded-full h-14 border-4 p-1.5 border-[#E5E5E5]"
-              />
-            </div>
-
-            {/* Name & Degree */}
-            <div className="flex flex-col items-start justify-center w-[60%]">
-              <p className="font-bold">Sekisui House Australia</p>
-              <p>Construction Supervisor</p>
-            </div>
-
-            {/* Timeline */}
-            <div className="flex justify-end w-[30%]">
-              <p className="text-sm text-gray-400">Nov 2023 - Nov 2024</p>
-            </div>
-          </div>
+          <ExpListItem
+            image={sekisui_logo}
+            name={"Sekisui House Australia"}
+            role={"Construction Supervisor"}
+            date={"Nov 2023 - Nov 2024"}
+          />
 
           {/* Experience 4 */}
 
-          <div className="flex flex-row mt-5 w-full">
-            {/* Logo */}
-            <div className="flex rounded-full justify-start items-center w-[10%]">
-              <img
-                src={mjh_logo}
-                alt=""
-                className="rounded-full h-14 border-4 p-1.5 border-[#E5E5E5]"
-              />
-            </div>
+          <ExpListItem
+            image={mjh_logo}
+            name={"McDonald Jones Homes"}
+            role={"Construction Supervisor"}
+            date={"June 2022 - June 2023"}
+          />
 
-            {/* Name & Degree */}
-            <div className="flex flex-col items-start justify-center w-[60%]">
-              <p className="font-bold">McDonald Jones Homes</p>
-              <p>Construction Supervisor</p>
-            </div>
+          {/* Experience 5 */}
 
-            {/* Timeline */}
-            <div className="flex justify-end w-[30%]">
-              <p className="text-sm text-gray-400">June 2022 - June 2023</p>
-            </div>
-          </div>
-
-          {/* Experience 4 */}
-
-          <div className="flex flex-row mt-5 w-full">
-            {/* Logo */}
-            <div className="flex rounded-full justify-start items-center w-[10%]">
-              <img
-                src={metricon_logo}
-                alt=""
-                className="rounded-full h-14 border-4 p-1.5 border-[#E5E5E5]"
-              />
-            </div>
-
-            {/* Name & Degree */}
-            <div className="flex flex-col items-start justify-center w-[60%]">
-              <p className="font-bold">Metricon Homes</p>
-              <p>Construction Manager</p>
-            </div>
-
-            {/* Timeline */}
-            <div className="flex justify-end w-[30%]">
-              <p className="text-sm text-gray-400">July 2020 - June 2022</p>
-            </div>
-          </div>
+          <ExpListItem
+            image={metricon_logo}
+            name={"Metricon Homes"}
+            role={"Construction Manager"}
+            date={"July 2020 - June 2022"}
+          />
 
           {/* Skills */}
 
           <div className="mt-10">
             <h1 className="text-xl font-bold">Skills</h1>
+
+            <div className="flex flex-wrap gap-2 w-full mt-5 gap-y-3">
+              <SkillsListItem image={django_logo} name={"Django"} />
+              <SkillsListItem image={react_logo} name={"React"} />
+              <SkillsListItem image={python_logo} name={"Python"} />
+              <SkillsListItem image={js_logo} name={"JavaScript"} />
+              <SkillsListItem image={java_logo} name={"Java"} />
+              <SkillsListItem image={tailwind_logo} name={"Tailwind"} />
+              <SkillsListItem image={pgsql_logo} name={"PostgreSQL"} />
+              <SkillsListItem image={nodejs_logo} name={"Node.js"} />
+              <SkillsListItem image={postman_logo} name={"Postman"} />
+            </div>
           </div>
 
           {/* My Projects */}
