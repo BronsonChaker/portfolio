@@ -8,14 +8,14 @@ export default function Projects() {
         <ol className="relative border-s border-default">
           {/* Blueprint */}
           <li className="mb-10 ms-4">
-            <div className="absolute w-3 h-3 bg-blue-400 rounded-full mt-1.5 -start-1.5 border border-buffer"></div>
+            <div className="mt-2 border-start absolute w-3 h-3 bg-blue-400 rounded-full -start-1.5 border border-buffer"></div>
             <h3 className="text-lg font-semibold text-heading my-2">
               Blueprint - Project Management Suite
             </h3>
 
             {/* Blueprint - Project Images */}
 
-            {/* Blueprint - Project Stack */}
+            {/* Bueprint - Project Stack */}
 
             {/* Blueprint - Website & Github Link */}
 

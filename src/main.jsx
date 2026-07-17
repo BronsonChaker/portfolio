@@ -11,7 +11,6 @@ import Blog from "./pages/Blog.jsx";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <BrowserRouter>
-      <Navbar />
       <Routes>
         <Route index path="/" element={<App />} />
         <Route path="/projects" element={<Projects />} />

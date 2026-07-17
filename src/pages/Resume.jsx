@@ -1,7 +1,11 @@
 export default function Resume() {
   return (
-    <div>
-      <h1>Resume</h1>
+    <div className="h-screen mt-20">
+      <title>Bronson Chaker</title>
+
+      <div className="mt-20">
+        <h1>Resume</h1>
+      </div>
     </div>
   );
 }
