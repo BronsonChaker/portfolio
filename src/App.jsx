@@ -23,11 +23,11 @@ export default function App() {
     <div className="h-full w-full flex items-center justify-center mt-25">
       <title>Bronson Chaker</title>
 
-      <div className="w-5/12 max-lg:w-10/12">
+      <div className="w-5/12 max-lg:w-10/12 ">
         {/* Heading */}
-        <section id="heading" className="w-full flex">
+        <section id="heading" className="w-full flex gap-10">
           <div className="w-[80%]">
-            <h1 className="text-5xl font-semibold">Bronson Chaker</h1>
+            <h1 className="text-5xl font-medium">Bronson Chaker</h1>
 
             <p className="mt-4 text-lg text-gray-500 font-light">
               Recent graduate from Charles Sturt Univeristy looking for a
