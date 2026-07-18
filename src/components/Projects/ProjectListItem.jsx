@@ -3,7 +3,6 @@ import { Link } from "react-router";
 export default function ProjectListItem({
   image,
   name,
-  date,
   description,
   technologies,
 }) {
@@ -16,11 +15,17 @@ export default function ProjectListItem({
       </div>
 
       {/* Project Name, Timeline, and Description */}
-      <div className="flex flex-col p-5 gap-3">
-        <h1 className="font-bold text-lg">{name}</h1>
-        <p className="text-sm text-gray-400">{date}</p>
-        <p className="text-sm text-gray-400">{description}</p>
-        <div className="flex gap-2 items-start justify-start">
+      <div className="flex flex-col p-6 gap-3 min-h-62.5">
+        <div>
+          <h1 className="font-semibold text-md">{name}</h1>
+          <Link></Link>
+        </div>
+
+        <div>
+          <p className="text-xs text-gray-400 leading-6">{description}</p>
+        </div>
+
+        <div className="flex flex-wrap gap-2 items-end justify-start">
           {technologies.map((text, index) => (
             <p
               key={index}

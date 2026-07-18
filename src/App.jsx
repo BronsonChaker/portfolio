@@ -13,48 +13,61 @@ import tailwind_logo from "../src/assets/svg/tailwind_logo.svg";
 import pgsql_logo from "../src/assets/svg/pgsql_logo.svg";
 import nodejs_logo from "../src/assets/svg/nodejs_logo.svg";
 import postman_logo from "../src/assets/svg/postman_logo.svg";
-import ExpListItem from "./components/ExpListItem";
-import SkillsListItem from "./components/SkillsListItem";
-import ProjectListItem from "./components/ProjectListItem";
-import { PROJECT_DATA } from "../src/data/project_data";
+import ExpListItem from "./components/Experience/ExpListItem";
+import SkillsListItem from "./components/Skills/SkillsListItem";
+import display_picture from "../src/assets/images/display_picture.png";
+import ProjectList from "./components/Projects/ProjectList";
 
 export default function App() {
   return (
     <div className="h-full w-full flex items-center justify-center mt-25">
       <title>Bronson Chaker</title>
-      {/* Heading */}
-      <div className="w-5/12">
-        <h1 className="text-5xl font-semibold">Bronson Chaker</h1>
 
-        <p className="mt-4 text-lg text-gray-500 font-light">
-          Recent graduate from Charles Sturt Univeristy looking for a Graduate
-          or Intern Software Engineering position.
-          <br></br>
-          <br></br>
-          <span className="mt-4">
-            Currently working on{" "}
-            <Link to="" className="text-blue-400 underline">
-              @Blueprint
-            </Link>
-          </span>
-        </p>
+      <div className="w-5/12 max-lg:w-10/12">
+        {/* Heading */}
+        <section id="heading" className="w-full flex">
+          <div className="w-[80%]">
+            <h1 className="text-5xl font-semibold">Bronson Chaker</h1>
+
+            <p className="mt-4 text-lg text-gray-500 font-light">
+              Recent graduate from Charles Sturt Univeristy looking for a
+              Graduate or Intern Software Engineering position.
+              <br></br>
+              <br></br>
+              <span className="mt-4">
+                Currently working on{" "}
+                <Link to="" className="text-blue-400 underline">
+                  @Blueprint
+                </Link>
+              </span>
+            </p>
+          </div>
+
+          <div className="flex items-center">
+            <img
+              src={display_picture}
+              alt=""
+              className="h-38 w-38 rounded-full shadow-sm shadow-stone-300 border-2 border-stone-300"
+            />
+          </div>
+        </section>
 
         {/* About */}
 
-        <div className="mt-10">
+        <section id="about" className="mt-10">
           <h1 className="text-xl font-bold">About</h1>
           <p className="mt-4 text-md leading-7 text-gray-500 line-off">
             Previously worked in construction management, have extensive project
             managment experience. Picked up an interest in software development
-            and started coding in my spare time. Enrolled into a Bachelor of
-            Computer Science @ Charles Sturt University in June 2023. Completed
-            studies in June 2026.
+            and started coding in my spare time which led me to enrolling into a
+            Bachelor of Computer Science at Charles Sturt University in June
+            2023. Completed my studies at Charles Sturt University in June 2026.
           </p>
-        </div>
+        </section>
 
         {/* Education */}
 
-        <div className="mt-10">
+        <section id="education" className="mt-10">
           <h1 className="text-xl font-bold">Education</h1>
           <ExpListItem
             image={csu_logo}
@@ -63,51 +76,18 @@ export default function App() {
             grade={"GPA: 6.09 / 7.0 [Distinction]"}
             date={"June 2023 - June 2026"}
           />
-        </div>
+        </section>
 
         {/* My Projects */}
 
-        <div className="mt-10">
+        <section className="mt-10">
           <h1 className="text-xl font-bold">Projects</h1>
-
-          <div className="grid grid-cols-2 gap-3 mt-5">
-            <ProjectListItem
-              image={PROJECT_DATA.image}
-              name={PROJECT_DATA.name}
-              date={PROJECT_DATA.date}
-              description={PROJECT_DATA.description}
-              technologies={PROJECT_DATA.technologies}
-            />
-
-            <ProjectListItem
-              image={PROJECT_DATA.image}
-              name={PROJECT_DATA.name}
-              date={PROJECT_DATA.date}
-              description={PROJECT_DATA.description}
-              technologies={PROJECT_DATA.technologies}
-            />
-
-            <ProjectListItem
-              image={PROJECT_DATA.image}
-              name={PROJECT_DATA.name}
-              date={PROJECT_DATA.date}
-              description={PROJECT_DATA.description}
-              technologies={PROJECT_DATA.technologies}
-            />
-
-            <ProjectListItem
-              image={PROJECT_DATA.image}
-              name={PROJECT_DATA.name}
-              date={PROJECT_DATA.date}
-              description={PROJECT_DATA.description}
-              technologies={PROJECT_DATA.technologies}
-            />
-          </div>
-        </div>
+          <ProjectList />
+        </section>
 
         {/* Work Experience */}
 
-        <div className="mt-10">
+        <section id="work-experience" className="mt-10">
           <h1 className="text-xl font-bold">Work Experience</h1>
 
           {/* Experience 1 */}
@@ -154,31 +134,31 @@ export default function App() {
             role={"Construction Manager"}
             date={"July 2020 - June 2022"}
           />
+        </section>
 
-          {/* Skills */}
+        {/* Skills */}
 
-          <div className="mt-10">
-            <h1 className="text-xl font-bold">Skills</h1>
+        <section className="mt-10">
+          <h1 className="text-xl font-bold">Skills</h1>
 
-            <div className="flex flex-wrap gap-2 w-full mt-5 gap-y-3">
-              <SkillsListItem image={django_logo} name={"Django"} />
-              <SkillsListItem image={react_logo} name={"React"} />
-              <SkillsListItem image={python_logo} name={"Python"} />
-              <SkillsListItem image={js_logo} name={"JavaScript"} />
-              <SkillsListItem image={java_logo} name={"Java"} />
-              <SkillsListItem image={tailwind_logo} name={"Tailwind"} />
-              <SkillsListItem image={pgsql_logo} name={"PostgreSQL"} />
-              <SkillsListItem image={nodejs_logo} name={"Node.js"} />
-              <SkillsListItem image={postman_logo} name={"Postman"} />
-            </div>
+          <div className="flex flex-wrap gap-2 w-full mt-5 gap-y-3">
+            <SkillsListItem image={django_logo} name={"Django"} />
+            <SkillsListItem image={react_logo} name={"React"} />
+            <SkillsListItem image={python_logo} name={"Python"} />
+            <SkillsListItem image={js_logo} name={"JavaScript"} />
+            <SkillsListItem image={java_logo} name={"Java"} />
+            <SkillsListItem image={tailwind_logo} name={"Tailwind"} />
+            <SkillsListItem image={pgsql_logo} name={"PostgreSQL"} />
+            <SkillsListItem image={nodejs_logo} name={"Node.js"} />
+            <SkillsListItem image={postman_logo} name={"Postman"} />
           </div>
+        </section>
 
-          {/* Contact */}
+        {/* Contact */}
 
-          <div className="mt-10">
-            <h1 className="text-xl font-bold">Contact</h1>
-          </div>
-        </div>
+        <section id="contact" className="mt-10">
+          <h1 className="text-xl font-bold">Contact</h1>
+        </section>
       </div>
     </div>
   );

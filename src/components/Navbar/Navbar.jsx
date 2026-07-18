@@ -29,7 +29,7 @@ export default function Navbar() {
           resume
         </NavLink>
         <NavLink
-          to="/blog"
+          to=""
           className={({ isActive, isPending }) =>
             isPending ? "pending" : isActive ? "active" : ""
           }
