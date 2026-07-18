@@ -15,6 +15,8 @@ import nodejs_logo from "../src/assets/svg/nodejs_logo.svg";
 import postman_logo from "../src/assets/svg/postman_logo.svg";
 import ExpListItem from "./components/ExpListItem";
 import SkillsListItem from "./components/SkillsListItem";
+import ProjectListItem from "./components/ProjectListItem";
+import { PROJECT_DATA } from "../src/data/project_data";
 
 export default function App() {
   return (
@@ -61,6 +63,46 @@ export default function App() {
             grade={"GPA: 6.09 / 7.0 [Distinction]"}
             date={"June 2023 - June 2026"}
           />
+        </div>
+
+        {/* My Projects */}
+
+        <div className="mt-10">
+          <h1 className="text-xl font-bold">Projects</h1>
+
+          <div className="grid grid-cols-2 gap-3 mt-5">
+            <ProjectListItem
+              image={PROJECT_DATA.image}
+              name={PROJECT_DATA.name}
+              date={PROJECT_DATA.date}
+              description={PROJECT_DATA.description}
+              technologies={PROJECT_DATA.technologies}
+            />
+
+            <ProjectListItem
+              image={PROJECT_DATA.image}
+              name={PROJECT_DATA.name}
+              date={PROJECT_DATA.date}
+              description={PROJECT_DATA.description}
+              technologies={PROJECT_DATA.technologies}
+            />
+
+            <ProjectListItem
+              image={PROJECT_DATA.image}
+              name={PROJECT_DATA.name}
+              date={PROJECT_DATA.date}
+              description={PROJECT_DATA.description}
+              technologies={PROJECT_DATA.technologies}
+            />
+
+            <ProjectListItem
+              image={PROJECT_DATA.image}
+              name={PROJECT_DATA.name}
+              date={PROJECT_DATA.date}
+              description={PROJECT_DATA.description}
+              technologies={PROJECT_DATA.technologies}
+            />
+          </div>
         </div>
 
         {/* Work Experience */}
@@ -129,12 +171,6 @@ export default function App() {
               <SkillsListItem image={nodejs_logo} name={"Node.js"} />
               <SkillsListItem image={postman_logo} name={"Postman"} />
             </div>
-          </div>
-
-          {/* My Projects */}
-
-          <div className="mt-10">
-            <h1 className="text-xl font-bold">Projects</h1>
           </div>
 
           {/* Contact */}
