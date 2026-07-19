@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import csu_logo from "../src/assets/images/csu_logo.jpg";
 import metricon_logo from "../src/assets/images/metricon_logo.webp";
 import mjh_logo from "../src/assets/images/mjh_logo.png";
@@ -15,41 +14,20 @@ import nodejs_logo from "../src/assets/svg/nodejs_logo.svg";
 import postman_logo from "../src/assets/svg/postman_logo.svg";
 import ExpListItem from "./components/Experience/ExpListItem";
 import SkillsListItem from "./components/Skills/SkillsListItem";
-import display_picture from "../src/assets/images/display_picture.png";
 import ProjectList from "./components/Projects/ProjectList";
+import Header from "./components/Header/Header";
+import Navbar from "./components/Navbar/Navbar";
 
 export default function App() {
   return (
-    <div className="h-full w-full flex items-center justify-center mt-25">
+    <main className="h-full w-full flex flex-col items-center justify-center">
       <title>Bronson Chaker</title>
 
+      <Navbar />
       <div className="w-5/12 max-lg:w-10/12 ">
         {/* Heading */}
         <section id="heading" className="w-full flex gap-10">
-          <div className="w-[70%]">
-            <h1 className="text-5xl font-medium">Bronson Chaker</h1>
-
-            <p className="mt-4 text-lg text-gray-500 font-light">
-              Recent graduate from Charles Sturt Univeristy looking for a
-              Graduate or Intern Software Engineering position.
-              <br></br>
-              <br></br>
-              <span className="mt-4">
-                Currently working on{" "}
-                <Link to="" className="text-blue-400 underline">
-                  @Blueprint
-                </Link>
-              </span>
-            </p>
-          </div>
-
-          <div className="flex items-center">
-            <img
-              src={display_picture}
-              alt=""
-              className="h-38 w-38 rounded-lg shadow-sm shadow-stone-300 border-2 border-stone-300"
-            />
-          </div>
+          <Header />
         </section>
 
         {/* About */}
@@ -160,6 +138,6 @@ export default function App() {
           <h1 className="text-xl font-bold">Contact</h1>
         </section>
       </div>
-    </div>
+    </main>
   );
 }
