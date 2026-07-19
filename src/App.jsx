@@ -26,7 +26,7 @@ export default function App() {
       <div className="w-5/12 max-lg:w-10/12 ">
         {/* Heading */}
         <section id="heading" className="w-full flex gap-10">
-          <div className="w-[80%]">
+          <div className="w-[70%]">
             <h1 className="text-5xl font-medium">Bronson Chaker</h1>
 
             <p className="mt-4 text-lg text-gray-500 font-light">
@@ -47,7 +47,7 @@ export default function App() {
             <img
               src={display_picture}
               alt=""
-              className="h-38 w-38 rounded-full shadow-sm shadow-stone-300 border-2 border-stone-300"
+              className="h-38 w-38 rounded-lg shadow-sm shadow-stone-300 border-2 border-stone-300"
             />
           </div>
         </section>
