@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+@theme {
+  --color-headings: #0a0a0a;
+}
+
 a.active {
   color: #50a2ff;
   text-decoration: underline;

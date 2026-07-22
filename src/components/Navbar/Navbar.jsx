@@ -46,7 +46,7 @@ export default function Navbar() {
           </p>
         </div>
 
-        <div className="relative group hover:px-2 hover:duration-500 ease-linear">
+        {/* <div className="relative group hover:px-2 hover:duration-500 ease-linear">
           <Link
             target="_blank"
             to="https://medium.com/@bronsonchaker"
@@ -63,7 +63,7 @@ export default function Navbar() {
           >
             Blog
           </p>
-        </div>
+        </div> */}
 
         <div className="relative group hover:px-2 hover:duration-500 ease-linear">
           <Link

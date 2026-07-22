@@ -1,16 +1,7 @@
-import placeholder_image from "../assets/images/placeholder_image.jpg";
 import under_development from "../assets/images/under_development.png";
 import melior_screenshot from "../assets/images/melior_screenshot.png";
 import yates_screenshot from "../assets/images/yates_screenshot.png";
 import northend_screenshot from "../assets/images/northend_screenshot.png";
-
-export const PROJECT_DATA = {
-  image: placeholder_image,
-  name: "Blueprint",
-  description:
-    "Developing a full-stack project management application for construction that can be used by builders and individuals to enhance oparational efficiency of projects.",
-  technologies: ["Django", "React", "TailwindCSS", "PostgreSQL", "AWS"],
-};
 
 export const projectData = [
   {

@@ -5,19 +5,11 @@ export default function Header() {
   return (
     <div className="flex">
       <div className="w-[70%]">
-        <h1 className="text-5xl font-medium">Bronson Chaker</h1>
+        <h1 className="text-5xl font-medium text-headings">Bronson Chaker</h1>
 
         <p className="mt-4 text-lg text-gray-500 font-light">
           Recent graduate from Charles Sturt Univeristy looking for a Graduate
           or Intern Software Engineering position.
-          <br></br>
-          <br></br>
-          <span className="mt-4">
-            Currently working on{" "}
-            <Link to="" className="text-blue-400 underline">
-              @Blueprint
-            </Link>
-          </span>
         </p>
       </div>
 
