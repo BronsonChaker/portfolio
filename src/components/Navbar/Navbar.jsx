@@ -66,13 +66,12 @@ export default function Navbar() {
         </div> */}
 
         <div className="relative group hover:px-2 hover:duration-500 ease-linear">
-          <Link
-            target="mailto:bronsonchaker@gmail.com"
-            className="hover:px-2 hover:duration-300"
+          <a
+            href="mailto:bronsonchaker@gmail.com"
             className="hover:px-2 hover:duration-300"
           >
             <MdOutlineEmail className="text-4xl hover:opacity-80 hover:duration-300 hover:scale-115 overflow-visible rounded-full p-2 hover:bg-gray-100 " />
-          </Link>
+          </a>
           <p
             className="absolute bottom-full left-1/2 
                        transform -translate-x-1/2 mb-0.5 
