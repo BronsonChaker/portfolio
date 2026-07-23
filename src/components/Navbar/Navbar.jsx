@@ -3,7 +3,7 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { FaRegFileLines } from "react-icons/fa6";
-import Resume from "../../assets/images/placeholder_image.jpg";
+import Resume from "../../assets/documents/Bronson_Chaker_Resume.pdf";
 
 export default function Navbar() {
   return (
@@ -86,9 +86,9 @@ export default function Navbar() {
         <div className="relative group hover:px-2 hover:duration-500 ease-linear">
           <Link
             target="_blank"
-            href=""
+            href={Resume}
             download="Bronson_Chaker_Resume"
-            to=""
+            to={Resume}
             className="hover:px-2 hover:duration-300"
           >
             <FaRegFileLines className="text-4xl hover:opacity-80 hover:duration-300 hover:scale-115 overflow-visible rounded-full p-2 hover:bg-gray-100 " />
