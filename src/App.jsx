@@ -8,7 +8,7 @@ import SkillsList from "./components/Skills/SkillsList";
 
 export default function App() {
   return (
-    <main className="h-full w-full flex flex-col items-center justify-center">
+    <main className="h-full w-full flex flex-col items-center justify-center bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
       <title>Bronson Chaker</title>
 
       <Navbar />
@@ -17,6 +17,8 @@ export default function App() {
         <section id="heading" className="w-full flex gap-10">
           <Header />
         </section>
+
+        <hr className="mt-10 text-gray-200" />
 
         {/* About */}
 
@@ -31,8 +33,9 @@ export default function App() {
           </p>
         </section>
 
-        {/* Education */}
+        <hr className="mt-10 text-gray-200" />
 
+        {/* Education */}
         <section id="education" className="mt-10">
           <h1 className="text-xl font-bold">Education</h1>
           <ExpListItem
@@ -44,34 +47,34 @@ export default function App() {
           />
         </section>
 
+        <hr className="mt-10 text-gray-200" />
         {/* My Projects */}
-
         <section className="mt-10">
           <h1 className="text-xl font-bold">Projects</h1>
           <ProjectList />
         </section>
 
-        {/* Work Experience */}
+        <hr className="mt-10 text-gray-200" />
 
+        {/* Work Experience */}
         <section id="work-experience" className="mt-10">
           <h1 className="text-xl font-bold">Work Experience</h1>
 
           <ExperienceList />
         </section>
 
+        <hr className="mt-10 text-gray-200" />
+
         {/* Skills */}
-
-        <section className="mt-10">
+        <section className="mt-10 mb-20">
           <h1 className="text-xl font-bold">Skills</h1>
-
           <SkillsList />
         </section>
 
         {/* Contact */}
-
-        <section id="contact" className="mt-10">
+        {/* <section id="contact" className="mt-10">
           <h1 className="text-xl font-bold">Contact</h1>
-        </section>
+        </section> */}
       </div>
     </main>
   );

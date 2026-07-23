@@ -3,7 +3,7 @@ import { Link } from "react-router";
 
 export default function Header() {
   return (
-    <div className="flex">
+    <div className="flex mt-5">
       <div className="w-[70%]">
         <h1 className="text-5xl font-medium text-headings">Bronson Chaker</h1>
 
